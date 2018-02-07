@@ -40,7 +40,13 @@ app.get('/about',(req,res)=>{
   //res.send('About page');
   res.render('about.hbs',{
     pageTitle:'My Page'
-  });  
+  });
+});
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    displayMsg: 'Portfolio Projects here'
+  })
 });
 
 app.get('/bad',(req,res)=>{
